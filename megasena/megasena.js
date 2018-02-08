@@ -7,12 +7,24 @@ do {
 	contador++;
 } while (contador < 6);
 
-/*for (var a = 0; a<=6; a++) {
-	document.write(a);
-};*/
 
 function ordena(ap) {
+	var tam = ap.length;
+	for (var i = tam-1; i>=0; i--) {
+		for (var j = 1; j<=i; j++) {
+			if (ap[j-1] > ap[j]) {
+				var temp = ap[j-1];
+				ap[j-1] = ap[j];
+				ap[j] = temp;
+			}
+		}
+	}
+	return ap;
+}
 
-};
+// Resta ainda trabalhar nessa função:
+function eliminaRepetidos(ap) {
 
-document.write(aposta);
+}
+
+document.write(ordena(aposta));

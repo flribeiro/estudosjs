@@ -24,7 +24,7 @@ function ordena(ap) {
 
 // Resta ainda trabalhar nessa função:
 function eliminaRepetidos(ap) {
-
+	return null;
 }
 
 document.write(ordena(aposta));

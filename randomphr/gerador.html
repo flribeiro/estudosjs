@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<title>Gerador randômico de frases</title>
+	<meta charset="utf-8">
+	<script>
+		function makePhrases() {
+			var words1 = ["Decisão", "Solução", "Estratégia", "Visão"];
+			var words2 = ["empoderada", "valorada", "orientada", "focada", "alinhada"];
+			var words3 = ["24 por 7.", "em fatos.", "ganha-ganha.", "com metas.", "de altíssimo nível."];
+			var rand1 = Math.floor(Math.random() * words1.length);
+			var rand2 = Math.floor(Math.random() * words2.length);
+			var rand3 = Math.floor(Math.random() * words3.length);
+			var phrase = words1[rand1] + " " + words2[rand2] + " " + words3[rand3];
+			alert(phrase);
+		}
+		makePhrases();
+	</script>
+</head>
+<body></body>
+</html>

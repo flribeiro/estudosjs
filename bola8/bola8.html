@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>Bola 8</title>
+		<meta charset="utf-8">
+		<script>
+			var bolaOito = {
+				indice: 0,
+				conselho: ["sim", "não", "talvez", "nem a pau", "com certeza", "pra ontem", "imediatamente", "quem sabe?", "de jeito nenhum"],
+				rand: function() {
+					//this.indice = Math.floor(Math.random() * 5) + 1;
+					this.indice = this.indice + 1;
+					if (this.indice >= this.conselho.length) {
+						this.indice = 0;
+					}
+				},
+				ver: function() {
+					return this.conselho[this.indice];
+				}
+			};
+
+			for (var i = 0; i < 1000; i++) {
+				bolaOito.rand();
+				console.log(bolaOito.ver());
+			}
+		</script>
+	</head>
+<body></body>
+</html>
